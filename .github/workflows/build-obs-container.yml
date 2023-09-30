@@ -9,7 +9,7 @@ on:
 permissions:
   checks: read
   contents: read
-  id-token: read
+  id-token: write
   packages: write
   pull-requests: read
   statuses: read
@@ -17,6 +17,7 @@ permissions:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v4
 
       - name: Login to GitHub Container Registry
