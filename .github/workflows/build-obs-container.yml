@@ -9,7 +9,7 @@ on:
 permissions:
   checks: read
   contents: read
-  id-token: read
+  id-token: write
   packages: write
   pull-requests: read
   statuses: read
